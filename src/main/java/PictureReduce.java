@@ -31,7 +31,7 @@ public class PictureReduce implements Runnable {
                 }
 
                 BufferedImage thumbnail = Thumbnails.of(image)
-                        .size(300, 300)
+                        .size(newWidth, newWidth)
                         .asBufferedImage();
 
                 File newFile = new File(dstFolder + "/" + file.getName());
